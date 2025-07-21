@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento - Eliane Peixoto | Manicure & Pedicure Artist</title>
+    <meta name="description" content="Agende seus serviços de manicure, pedicure e design de sobrancelhas com Eliane Peixoto. Profissional especializada em beleza e cuidados estéticos.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="logoel.jpg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="logoel.jpg" alt="Eliane Peixoto - Manicure & Pedicure Artist" class="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#status" class="nav-link">Status</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#agendamento" class="nav-link">Agendamento</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Eliane Peixoto</h1>
+                <p class="hero-subtitle">Manicure & Pedicure Artist</p>
+                <p class="hero-description">
+                    Especialista, manicure e pedicure. 
+                    Cuidado profissional com a beleza que você merece.
+                </p>
+                <a href="#agendamento" class="btn btn-primary">
+                    <i class="fas fa-calendar-alt"></i>
+                    Agendar Horário
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Status da Agenda -->
+    <section id="status" class="agenda-status">
+        <div class="container">
+            <h2 class="section-title">Status da Agenda</h2>
+            <div class="status-container">
+                <div class="status-card" id="statusCard">
+                    <div class="status-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="status-content">
+                        <h3 id="statusTitle">Agenda Disponível</h3>
+                        <p id="statusMessage">Horários disponíveis para agendamento. Selecione seu serviço preferido!</p>
+                    </div>
+                </div>
+                
+                <div class="announcements" id="announcements" style="display: none;">
+                    <h3>Comunicados Importantes</h3>
+                    <div id="announcementsList"></div>
+                </div>
+                
+                <div class="next-available" id="nextAvailable">
+                    <h2>Painel de dias disponíveis</h2>
+                      <p>#Para consultar os horários, basta conferir na seção de agendamento! 🗓️💇‍♀️💇‍♂️</p>
+                      <p>❗️ Observação: Pode ser que algum cliente tenha cancelado um horário agendado. Fique atento(a)! 👀✨</p>
+                      <p>🔔 Fique ligado(a) nos stories do WhatsApp do salão! Lá postaremos cancelamentos de agendamentos e comunicados importantes 📝📱</p>
+                      <p>✨O painel abaixo mostra apenas os dias disponíveis. Os dias que já estão completos não aparecem aqui.</p>
+                      <p>Se precisar de atendimento urgente, entre em contato direto com a Eliane e tente negociar um horário particular.🤝</p>
+                      <p> <strong>Veja aqui os dias disponíveis! ✨</strong></p>
+                  
+                    <div id="nextSlotsList" class="next-slots"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3 class="service-title">Mão e Pé Simples</h3>
+                    <p class="service-description">
+                        Cuidado básico para suas mãos com técnicas profissionais.
+                    </p>
+                    <div class="service-price">R$ 50,00</div>
+                    <ul class="service-features">
+                        <li>Com esmaltação</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3 class="service-title">Mão e Pé /Francesinha</h3>
+                    <p class="service-description">
+                        Cuidado básico para suas mãos com técnicas profissionais.
+                    </p>
+                    <div class="service-price">R$ 56,00</div>
+                    <ul class="service-features">
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">Mão e Pé / Homens</h3>
+                    <p class="service-description">
+                        Manicure completa com esmaltação tradicional.
+                    </p>
+                    <div class="service-price">R$ 50,00</div>
+                    <ul class="service-features">
+                        <li><strong>Esse serviço é apartir de R$50,00</strong></li>
+
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3 class="service-title">Só a Mão / Simples</h3>
+                    <p class="service-description">
+                        Pedicure completa com esmaltação tradicional.
+                    </p>
+                    <div class="service-price">R$ 25,00</div>
+                    <ul class="service-features">
+    
+                        <li>Com Esmaltação</li>
+        
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="service-title">Só o Pé / Simples </h3>
+                    <p class="service-description">
+                        Combo completo com desconto especial.
+                    </p>
+                    <div class="service-price">R$ 30,00</div>
+                    <ul class="service-features">
+                        <li>Com Esmaltação</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="service-title">Só a Mão / Homem</h3>
+                    <p class="service-description">
+                        Esmaltação em gel para maior durabilidade.
+                    </p>
+                    <div class="service-price">R$ 30,00</div>
+                    <ul class="service-features">
+                        <li>Apenas R$30,00</li>
+                       
+                    </ul>
+                </div>    
+
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title">Só o Pé / Homem</h3>
+                    <p class="service-description">
+                        Arte personalizada nas unhas para um visual único.
+                    </p>
+                    <div class="service-price">R$ 30,00</div>
+                    <div class="service-duration">75 minutos</div>
+                    <ul class="service-features">
+                        <li><strong>Apartir de R$30,00</strong></li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="service-title">Unha de Gel <br>"Indisponível".</h3>
+                    <p class="service-description">
+                        Esmaltação em gel para maior durabilidade.
+                    </p>
+                    <div class="service-price">R$ 0,00</div>
+                    <div class="service-duration">90 minutos</div>
+                    <ul class="service-features">
+                        <li><strong>Não faço esse serviço!!</strong></li>   
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendamento" class="appointment">
+        <div class="container">
+            <h2 class="section-title">Agende seu Horário</h2>
+            <div class="appointment-container">
+                <div class="appointment-info">
+                    <h3>Como funciona?</h3>
+                    <div class="info-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Escolha o Serviço</h4>
+                                <p>Selecione o serviço desejado</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Selecione Data e Horário</h4>
+                                <p>Veja a disponibilidade em tempo real</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Confirme seus Dados</h4>
+                                <p>Preencha suas informações</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Agendamento Confirmado</h4>
+                                <p>Receba a confirmação via WhatsApp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="appointment-form-container">
+                    <form id="appointmentForm" class="appointment-form">
+                        <div class="form-group">
+                            <label for="service">Serviço *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Selecione um serviço</option>
+                                <option value="Mão e Pé, Serv. Simples / Mulher" data-price="0" data-duration="0">Mão e Pé, Serv. Simples com Esmaltação - R$ 50,00</option>
+                                <option value="Mão e Pé / Francesinha" data-price="0" data-duration="0">Mão e Pé / Francesinha- R$ 56,00</option>
+                                <option value="Mão e Pé / Homem, apartir de" data-price="0" data-duration="0">Mão e Pé / Homem, apartir de - R$ 50,00</option>
+                                <option value="Só a Mão / Simples , com Esmaltação" data-price="0" data-duration="0">Só a Mão / Simples , com Esmaltação - R$ 25,00</option>
+                                <option value="Só a Mão / Homem" data-price="0" data-duration="0">Só a Mão / Homem- R$ 30,00</option>
+                                <option value="Só o Pé  / Homem, apartir de " data-price="0">Só o Pé  / Homem, apartir de - R$ 30,00</option>
+                                <option value="Unha de Gel, Serv. Indisponível!!!" data-price="0" data-duration="0">Unha de Gel, Serv. Indisponível!!! - R$ 0,00</option>
+                            </select>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Data *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Horário *</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Selecione um horário</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name">Nome Completo *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Observações</label>
+                            <textarea id="notes" name="notes" rows="3" placeholder="Alguma observação especial?"></textarea>
+                        </div>
+
+                        <div class="appointment-summary" id="appointmentSummary" style="display: none;">
+                            <h4>Resumo do Agendamento</h4>
+                            <div class="summary-content">
+                                <div class="summary-item">
+                                    <span>Serviço:</span>
+                                    <span id="summaryService"></span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Data:</span>
+                                    <span id="summaryDate"></span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Horário:</span>
+                                    <span id="summaryTime"></span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Duração:</span>
+                                    <span id="summaryDuration"></span>
+                                </div>
+                                <div class="summary-item total">
+                                    <span>Total:</span>
+                                    <span id="summaryPrice"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="policy-notice">
+                            <h4>Política de Não Comparecimento</h4>
+                            <p><strong>Importante:</strong> Para garantir a qualidade do atendimento e respeitar outros clientes:</p>
+                            <p>• Em caso de não comparecimento sem aviso prévio de pelo menos 1 dia, será aplicada uma taxa de <strong>R$ 8,00</strong> no próximo agendamento 💸⏰.</p>
+                            <p>•  Para cancelar ou remarcar, entre em contato via WhatsApp com antecedência. 📱</p>
+                            <p>• Tente chegar sempre no horário agendado para evitar atrasos e garantir um atendimento tranquilo. 🕒✨</p>
+                            <p><strong>🤝 Sua compreensão nos ajuda a manter a excelência no atendimento!</strong></p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-calendar-check"></i>
+                            Confirmar Agendamento
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>WhatsApp</h4>
+                            <p>(11) 94446-5965</p>
+                            <a href="https://wa.me/5511944465965" target="_blank" class="btn btn-outline">
+                                Chamar no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 8h às 12h e 13h às 19h</p>
+                            <p>Sábado: 8h às 12h e 13h às 19h</p>
+                            <p>Domingo: Fechado</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h4>Localização</h4>
+                            <p>Região: São Paulo - SP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-social">
+                    <h3>Siga-nos nas Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                            Facebook
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logotipoeliane3.jpg" alt="Eliane Peixoto" class="footer-logo-img">
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Eliane Peixoto - Manicure & Pedicure Artist. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmação -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Agendamento Confirmado!</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <p>Seu agendamento foi realizado com sucesso!</p>
+                <div id="confirmationDetails"></div>
+                <p class="modal-note">
+                    <i class="fas fa-info-circle"></i>
+                    Em breve você receberá uma confirmação via WhatsApp com todos os detalhes.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="shareOnWhatsApp()">
+                    <i class="fab fa-whatsapp"></i>
+                    Compartilhar no WhatsApp
+                </button>
+                <button class="btn btn-outline" onclick="closeModal()">
+                    Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
