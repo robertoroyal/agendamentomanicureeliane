@@ -2,7 +2,7 @@
 
 ## 📧 Relatórios Automáticos por Email
 
-O sistema agora envia automaticamente dois tipos de relatórios para o email do salão: **elianepeixoto.manicure@gmail.com**
+O sistema agora envia automaticamente dois tipos de relatórios para o email do salão
 
 ### 📅 Relatório Semanal de Disponibilidade
 
@@ -130,13 +130,5 @@ Para implementação em produção real:
 4. **Backup automático** dos relatórios
 5. **Dashboard administrativo** para visualizar relatórios
 
-## 📞 Suporte
 
-Para dúvidas sobre os relatórios:
-- **WhatsApp**: (11) 94446-5965
-- **Email**: elianepeixoto.manicure@gmail.com
-
----
-
-**Sistema desenvolvido para otimizar a gestão do Salão Eliane Peixoto** 🎀
 
